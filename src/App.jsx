@@ -19,7 +19,7 @@ function App() {
 
   const handleRemoveFromCart = (toolId) => {
     setCartItems(cartItems.filter(id => id !== toolId))
-    toast.info('Item removed from cart!');
+    toast.warning('Item removed from cart!');
   }
 
   const handleClearCart = () => {

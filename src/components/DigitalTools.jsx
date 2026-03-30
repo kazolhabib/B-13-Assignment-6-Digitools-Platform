@@ -98,10 +98,10 @@ const DigitalTools = ({ cartItems = [], onAddToCart, onRemoveFromCart, onClearCa
                 <button 
                   onClick={() => onAddToCart && onAddToCart(tool.id)}
                   disabled={cartItems.includes(tool.id)}
-                  className={`w-full font-semibold py-3.5 rounded-full transition-colors mt-auto shadow-sm tracking-wide flex justify-center items-center gap-2 cursor-pointer ${
+                  className={`w-full font-semibold py-3.5 rounded-full transition-all mt-auto shadow-sm tracking-wide flex justify-center items-center gap-2 cursor-pointer ${
                     cartItems.includes(tool.id)
                       ? 'bg-green-500 text-white cursor-not-allowed'
-                      : 'bg-[#8B5CF6] hover:bg-[#7C3AED] text-white'
+                      : 'bg-linear-to-r from-blue-700 to-purple-500 hover:opacity-90 text-white'
                   }`}
                 >
                   {cartItems.includes(tool.id) ? (
@@ -172,7 +172,7 @@ const DigitalTools = ({ cartItems = [], onAddToCart, onRemoveFromCart, onClearCa
                     toast.success('Order placed successfully! Redirecting...');
                     if (onClearCart) onClearCart();
                   }}
-                  className="w-full bg-[#8B5CF6] hover:bg-[#7C3AED] text-white font-semibold py-3.5 rounded-full transition-colors shadow-sm tracking-wide text-[16px] cursor-pointer"
+                  className="w-full bg-linear-to-r from-blue-700 to-purple-500 hover:opacity-90 text-white font-semibold py-3.5 rounded-full transition-all shadow-sm tracking-wide text-[16px] cursor-pointer"
                 >
                   Proceed To Checkout
                 </button>
