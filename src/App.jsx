@@ -6,6 +6,7 @@ import Hero from './components/Hero'
 import Counter from './components/Counter'
 import DigitalTools from './components/DigitalTools'
 import Services from './components/Services'
+import Pricing from './components/Pricing'
 import './App.css'
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
         onClearCart={handleClearCart}
       />
       <Services />
+      <Pricing />
     </div>
   )
 }
