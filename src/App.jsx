@@ -1,13 +1,13 @@
+import Navbar from './components/Navbar'
+import Hero from './components/Hero'
 import './App.css'
 
 function App() {
-
   return (
-    <>
-      <section>
-        <h1>Welcome to React</h1>
-      </section>
-    </>
+    <div className="bg-white min-h-screen">
+      <Navbar />
+      <Hero />
+    </div>
   )
 }
 
