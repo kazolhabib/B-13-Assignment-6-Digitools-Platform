@@ -47,7 +47,7 @@ const DigitalTools = ({ cartItems = [], onAddToCart, onRemoveFromCart, onClearCa
               className={`px-7 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 ${
                 activeTab === 'Cart'
                   ? 'bg-gradient-to-r from-[#813efb] to-[#a344ff] text-white shadow-md'
-                  : 'text-gray-500 hover:text-gray-900 bg-transparent'
+                  : 'text-[#25065D] hover:text-gray-900 bg-transparent'
               }`}
             >
               Cart ({cartItems.length})

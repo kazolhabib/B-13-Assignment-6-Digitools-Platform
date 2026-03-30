@@ -15,7 +15,7 @@ const Hero = () => {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#8b5cf6]"></span>
               </span>
-              <span className="text-sm font-semibold bg-linear-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
+              <span className="text-sm font-semibold bg-linear-to-r from-blue-700 to-purple-500 bg-clip-text text-transparent">
                 New: AI-Powered Tools Available
               </span>
             </div>
