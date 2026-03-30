@@ -5,9 +5,9 @@ import rocketImg from '../assets/rocket.png';
 
 const Services = () => {
   return (
-    <section className="w-full py-20 bg-[#F9FAFC]">
+    <section className="w-full py-16 md:py-28 bg-[#F9FAFC]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-2xl mx-auto mb-16">
+        <div className="text-center max-w-2xl mx-auto mb-10">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#1a1f36] tracking-tight mb-5">
             Get Started In 3 Steps
           </h2>
