@@ -7,6 +7,7 @@ import Counter from './components/Counter'
 import DigitalTools from './components/DigitalTools'
 import Services from './components/Services'
 import Pricing from './components/Pricing'
+import CTA from './components/CTA'
 import './App.css'
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
       />
       <Services />
       <Pricing />
+      <CTA />
     </div>
   )
 }
