@@ -5,6 +5,7 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Counter from './components/Counter'
 import DigitalTools from './components/DigitalTools'
+import Services from './components/Services'
 import './App.css'
 
 function App() {
@@ -32,12 +33,13 @@ function App() {
       <Navbar cartCount={cartItems.length} />
       <Hero />
       <Counter />
-      <DigitalTools 
-        cartItems={cartItems} 
-        onAddToCart={handleAddToCart} 
-        onRemoveFromCart={handleRemoveFromCart} 
+      <DigitalTools
+        cartItems={cartItems}
+        onAddToCart={handleAddToCart}
+        onRemoveFromCart={handleRemoveFromCart}
         onClearCart={handleClearCart}
       />
+      <Services />
     </div>
   )
 }

@@ -19,7 +19,7 @@ const DigitalTools = ({ cartItems = [], onAddToCart, onRemoveFromCart, onClearCa
   };
 
   return (
-    <section className="w-full py-20 bg-white md:bg-[#FAFAFA]">
+    <section className="w-full py-16 lg:py-28 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <div className="text-center max-w-2xl mx-auto mb-14">
