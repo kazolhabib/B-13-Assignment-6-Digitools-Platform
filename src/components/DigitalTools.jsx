@@ -21,9 +21,9 @@ const DigitalTools = ({ cartItems = [], onAddToCart, onRemoveFromCart, onClearCa
   return (
     <section className="w-full py-20 bg-white md:bg-[#FAFAFA]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header Section */}
+
         <div className="text-center max-w-2xl mx-auto mb-14">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold bg-linear-to-r from-blue-700 to-purple-500 bg-clip-text text-transparent tracking-tight mb-5">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold bg-linear-to-r from-blue-700 to-purple-500 bg-clip-text text-transparent tracking-tight mb-4 sm:mb-5 sm:pb-1.5">
             Premium Digital Tools
           </h2>
           <p className="text-[#627382] text-base leading-relaxed mb-8">
@@ -61,9 +61,8 @@ const DigitalTools = ({ cartItems = [], onAddToCart, onRemoveFromCart, onClearCa
             {toolsData.map((tool) => (
               <div 
                 key={tool.id} 
-                className="bg-white rounded-[24px] p-7 md:p-8 border border-gray-200 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all duration-300 flex flex-col h-full hover:-translate-y-1"
+                className="bg-white rounded-2xl p-5 md:p-6 border border-gray-200 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all duration-300 flex flex-col h-full hover:-translate-y-1"
               >
-                {/* Card Header */}
                 <div className="flex justify-between items-start mb-6">
                   <div className="w-14 h-14 rounded-full bg-[#F8FAFC] flex items-center justify-center text-2xl border border-gray-100">
                     <span role="img" aria-label={tool.name}>{tool.icon}</span>
@@ -73,7 +72,6 @@ const DigitalTools = ({ cartItems = [], onAddToCart, onRemoveFromCart, onClearCa
                   </span>
                 </div>
 
-                {/* Card Content */}
                 <h3 className="text-[22px] font-bold text-[#1a1f36] tracking-tight mb-3">{tool.name}</h3>
                 <p className="text-[#627382] text-[15px] leading-relaxed mb-6 flex-grow">{tool.description}</p>
                 
@@ -82,7 +80,6 @@ const DigitalTools = ({ cartItems = [], onAddToCart, onRemoveFromCart, onClearCa
                   <span className="text-[15px] font-medium text-gray-400 ml-1">{tool.period}</span>
                 </div>
 
-                {/* Features List */}
                 <ul className="space-y-4 mb-8">
                   {tool.features.map((feature, idx) => (
                     <li key={idx} className="flex items-start">
@@ -94,7 +91,6 @@ const DigitalTools = ({ cartItems = [], onAddToCart, onRemoveFromCart, onClearCa
                   ))}
                 </ul>
 
-                {/* Action Button */}
                 <button 
                   onClick={() => onAddToCart && onAddToCart(tool.id)}
                   disabled={cartItems.includes(tool.id)}
@@ -119,7 +115,7 @@ const DigitalTools = ({ cartItems = [], onAddToCart, onRemoveFromCart, onClearCa
             ))}
           </div>
         ) : (
-          <div className="w-full mx-auto bg-white border border-gray-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)] rounded-[24px] p-8 md:p-10">
+          <div className="w-full mx-auto bg-white border border-gray-200 shadow-[0_8px_30px_rgb(0,0,0,0.04)] rounded-2xl p-8 md:p-10">
             <h3 className="text-[22px] font-bold text-[#1a1f36] mb-8">Your Cart</h3>
             
             {cartItems.length === 0 ? (
