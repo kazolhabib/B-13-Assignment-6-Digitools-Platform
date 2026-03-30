@@ -3,7 +3,7 @@ import bannerImage from '../assets/banner.png';
 
 const Hero = () => {
   return (
-    <section className="w-full bg-white py-12 md:py-16 lg:py-24 overflow-hidden">
+    <section className="w-full bg-white py-12 md:py-16 lg:py-21 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-5">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-2.5 items-center">
           
