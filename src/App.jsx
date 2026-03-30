@@ -8,6 +8,7 @@ import DigitalTools from './components/DigitalTools'
 import Services from './components/Services'
 import Pricing from './components/Pricing'
 import CTA from './components/CTA'
+import Footer from './components/Footer'
 import './App.css'
 
 function App() {
@@ -44,6 +45,7 @@ function App() {
       <Services />
       <Pricing />
       <CTA />
+      <Footer />
     </div>
   )
 }
