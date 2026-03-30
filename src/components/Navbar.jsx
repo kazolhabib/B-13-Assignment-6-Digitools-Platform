@@ -1,16 +1,15 @@
 import React, { useState } from 'react';
 
-const Navbar = () => {
+const Navbar = ({ cartCount = 0 }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="w-full bg-white relative border-b border-[#F2F2F2]">
+    <nav className="w-full bg-white relative border-b border-[#F2F2F2] sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-5">
         <div className="flex justify-between items-center h-[80px]">
 
-          {/* Logo */}
           <div className="flex-1 flex items-center justify-start">
-            <a href="/" className="text-3xl font-extrabold bg-linear-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
+            <a href="/" className="text-3xl font-extrabold bg-linear-to-r from-blue-700 to-purple-500 bg-clip-text text-transparent">
               DigiTools
             </a>
           </div>
@@ -43,12 +42,17 @@ const Navbar = () => {
           <div className="hidden min-[998px]:flex flex-1 justify-end items-center space-x-6">
             <div className='flex mr-4'>
               {/* Cart icon */}
-              <button className="text-[#101727] mr-4 cursor-pointer hover:text-blue-700 transition" aria-label="Cart">
+              <button className="relative text-[#101727] mr-4 cursor-pointer hover:text-blue-700 transition" aria-label="Cart">
                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <circle cx="8" cy="21" r="1" />
                   <circle cx="19" cy="21" r="1" />
                   <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" />
                 </svg>
+                {cartCount > 0 && (
+                  <span className="absolute -top-1.5 -right-2 bg-red-500 text-white text-[10px] font-bold h-4 w-4 rounded-full flex items-center justify-center">
+                    {cartCount}
+                  </span>
+                )}
               </button>
               <a href="#" className="font-semibold text-[#101727] hover:text-blue-700 text-base transition-colors">
                 Login
@@ -74,12 +78,17 @@ const Navbar = () => {
 
             <div className="flex items-center gap-4 pt-2 pb-2">
               <span className="font-semibold text-[#101727]">Your Cart</span>
-              <button className="text-[#101727] hover:text-blue-700 transition" aria-label="Cart">
+              <button className="relative text-[#101727] hover:text-blue-700 transition" aria-label="Cart">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <circle cx="8" cy="21" r="1" />
                   <circle cx="19" cy="21" r="1" />
                   <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" />
                 </svg>
+                {cartCount > 0 && (
+                  <span className="absolute -top-1.5 -right-2 bg-red-500 text-white text-[10px] font-bold h-4 w-4 rounded-full flex items-center justify-center">
+                    {cartCount}
+                  </span>
+                )}
               </button>
             </div>
 

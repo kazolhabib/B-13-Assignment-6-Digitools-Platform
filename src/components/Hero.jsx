@@ -22,7 +22,7 @@ const Hero = () => {
 
             <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold text-[#1a1f36] tracking-tight leading-[1.1] mb-6">
               Supercharge Your <br className="hidden md:block" />
-              Digital Workflow
+              <span className="bg-linear-to-r from-blue-700 to-purple-500 bg-clip-text text-transparent">Digital Workflow</span>
             </h1>
 
             <p className="text-lg text-[#627382] mb-9 max-w-xl leading-relaxed">
