@@ -8,22 +8,22 @@ const CTA = () => {
           Ready To Transform Your Workflow?
         </h2>
         
-        <p className="text-white text-base md:text-lg mb-10 max-w-2xl mx-auto leading-relaxed font-light">
+        <p className="text-white text-base mb-10 max-w-2xl mx-auto leading-relaxed font-light">
           Join thousands of professionals who are already using Digitools to work smarter.<br className="hidden md:block" />
           Start your free trial today.
         </p>
         
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
-          <button className="w-full sm:w-auto px-8 py-3.5 bg-white text-[#7C3AED] font-semibold rounded-full hover:bg-gray-50 transition-colors duration-300 shadow-lg cursor-pointer">
-            Explore Products
+          <button className="w-full sm:w-auto px-4 py-3 bg-white font-semibold rounded-full hover:bg-gray-50 transition-colors duration-300 shadow-lg cursor-pointer">
+            <span className="bg-linear-to-r from-blue-700 to-purple-500 bg-clip-text text-transparent">Explore Products</span>
           </button>
           
-          <button className="w-full sm:w-auto px-8 py-3.5 bg-transparent border border-white text-white font-semibold rounded-full hover:bg-white/10 transition-colors duration-300 cursor-pointer">
+          <button className="w-full sm:w-auto px-8 py-3 bg-transparent border border-white text-white font-semibold rounded-full hover:bg-white/10 transition-colors duration-300 cursor-pointer">
             View Pricing
           </button>
         </div>
         
-        <p className="text-white/80 text-sm font-medium">
+        <p className="text-white/80 text-sm font-normal">
           14-day free trial &bull; No credit card required &bull; Cancel anytime
         </p>
       </div>
