@@ -23,7 +23,7 @@ const DigitalTools = ({ cartItems = [], onAddToCart, onRemoveFromCart, onClearCa
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <div className="text-center max-w-2xl mx-auto mb-14">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold bg-linear-to-r from-blue-700 to-purple-500 bg-clip-text text-transparent tracking-tight mb-4 sm:mb-5 sm:pb-1.5">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#1a1f36] tracking-tight mb-4 sm:mb-5 sm:pb-1.5">
             Premium Digital Tools
           </h2>
           <p className="text-[#627382] text-base leading-relaxed mb-8">
