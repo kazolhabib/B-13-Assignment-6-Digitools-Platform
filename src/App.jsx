@@ -17,13 +17,13 @@ function App() {
   const handleAddToCart = (toolId) => {
     if (!cartItems.includes(toolId)) {
       setCartItems([...cartItems, toolId])
-      toast.success('Item added to cart!');
+      toast.success('Item added to cart');
     }
   }
 
   const handleRemoveFromCart = (toolId) => {
     setCartItems(cartItems.filter(id => id !== toolId))
-    toast.warning('Item removed from cart!');
+    toast.warning('Item removed from cart');
   }
 
   const handleClearCart = () => {

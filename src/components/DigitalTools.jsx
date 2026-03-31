@@ -108,7 +108,7 @@ const DigitalTools = ({ cartItems = [], onAddToCart, onRemoveFromCart, onClearCa
                       Added to Cart
                     </>
                   ) : (
-                    'Add to Cart'
+                    'Buy Now'
                   )}
                 </button>
               </div>
@@ -165,7 +165,7 @@ const DigitalTools = ({ cartItems = [], onAddToCart, onRemoveFromCart, onClearCa
 
                 <button 
                   onClick={() => {
-                    toast.success('Order placed successfully! Redirecting...');
+                    toast.success('Order placed successfully');
                     if (onClearCart) onClearCart();
                   }}
                   className="w-full bg-linear-to-r from-blue-700 to-purple-500 hover:opacity-90 text-white font-semibold py-3.5 rounded-full transition-all shadow-sm tracking-wide text-[16px] cursor-pointer"
