@@ -1,16 +1,20 @@
-# React + Vite
+# DigiTools Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the **DigiTools Platform**, a digital tools marketplace designed to help users discover, browse, and purchase various modern software tools effortlessly.
 
-Currently, two official plugins are available:
+## Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This project is built using modern web development technologies to ensure a fast, responsive, and interactive experience:
 
-## React Compiler
+- **React.js**
+- **Tailwind CSS**
+- **DaisyUI**
+- **JavaScript (ES6+)**
+- **React-Toastify (NPM Package)**
+- **JSON**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. **Extensive Digital Tool Catalog**: Browse through a curated selection of top-rated digital tools, complete with detailed descriptions, pricing, and user ratings.
+2. **Modern & Responsive UI**: Enjoy a visually appealing, fully responsive user interface built rapidly and beautifully via Tailwind CSS and DaisyUI components.
+3. **Interactive User Experience**: Benefit from a seamless cart management system with real-time popup notifications powered by React-Toastify.
